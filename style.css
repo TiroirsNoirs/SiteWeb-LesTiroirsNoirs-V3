@@ -10,14 +10,14 @@
     --color-grey: #666666;       /* Gris */
 
     /* --- COULEURS DE FOND (THÈMES DYNAMIQUES) --- */
-    --bg-accueil:    #ff0000;    /* Noir pur */
-    --bg-compagnie:  #594bd6;    /* Gris très sombre */
-    --bg-membres:    #212013;    /* Nuance bleutée */
-    --bg-diffusion:  #1a2212;    /* Nuance marron */
-    --bg-spectacles: #162920;    /* Nuance rouge */
+    --bg-accueil:    #b52c2c;    /* Noir pur */
+    --bg-compagnie:  #4034af;    /* Gris très sombre */
+    --bg-membres:    #4d4a0e;    /* Nuance bleutée */
+    --bg-diffusion:  #1a5b5e;    /* Nuance marron */
+    --bg-spectacles: #4a134f;    /* Nuance rouge */
     --bg-archives:   #162a26;    /* Gris soutenu */
     --bg-agenda:     #18242f;    /* Presque noir */
-    --bg-autres:     #281515;    /* Gris neutre */
+    --bg-autres:     #4d1212;    /* Gris neutre */
 
     /* --- TYPOGRAPHIE --- */
     --font-title: 'Caveat', Arial, sans-serif;
