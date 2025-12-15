@@ -14,8 +14,8 @@
     --bg-compagnie:  #4034af;    /* Gris très sombre */
     --bg-membres:    #4d4a0e;    /* Nuance bleutée */
     --bg-diffusion:  #1a5b5e;    /* Nuance marron */
-    --bg-spectacles: #4a134f;    /* Nuance rouge */
-    --bg-archives:   #162a26;    /* Gris soutenu */
+    --bg-spectacles: #3c1a3f;    /* Nuance rouge */
+    --bg-archives:   #15302b;    /* Gris soutenu */
     --bg-agenda:     #18242f;    /* Presque noir */
     --bg-autres:     #4d1212;    /* Gris neutre */
 
@@ -196,7 +196,7 @@ h2 {
 
 h3 {
     font-family: var(--font-title);
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     color: var(--text-accent);
     margin-bottom: 1rem;
     margin-top: 1.5rem;
