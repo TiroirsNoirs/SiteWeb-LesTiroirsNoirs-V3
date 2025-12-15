@@ -118,12 +118,12 @@ nav {
    5. HEADER & ACCUEIL
    ========================================= */
 header {
-    padding-top: 20px; /* Espace pour le menu fixe */
+    padding-top: 80px; /* Espace pour le menu fixe */
     height: auto;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
 }
