@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     const options = {
         root: null, // Par rapport à la fenêtre
-        threshold: 0.1, // Déclenche quand 30% de la section est visible
+        threshold: 0.2, // Déclenche quand 30% de la section est visible
         rootMargin: "0px"
     };
 
