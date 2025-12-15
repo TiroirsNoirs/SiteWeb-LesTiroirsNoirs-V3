@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- TITRE OPTIMISÉ (Apparait dans l'onglet et en bleu sur Google) -->
+    <title>Les Tiroirs Noirs</title>
+    
+    <!-- MÉTA DESCRIPTION (Le résumé gris sur Google - Crucial !) -->
+    <meta name="description" content="Compagnie de théâtre à Brest fondée en 2001. Spectacles mêlant clown, poésie, musique originale, burlesque et science Découvrez notre agenda et nos créations.">
+    
+    <!-- MOTS CLÉS (Moins utile aujourd'hui, mais ça ne mange pas de pain) -->
+    <meta name="keywords" content="Théâtre, Brest, Clown, Burlesque, Science, Spectacle vivant, Les Tiroirs Noirs, Hervé Le Men, Philip Hardy, Musique">
+
+    <!-- RÉSEAUX SOCIAUX (Open Graph - Pour Facebook/WhatsApp/LinkedIn) -->
+    <meta property="og:title" content="Les Tiroirs Noirs - Théâtre & Science">
+    <meta property="og:description" content="Découvrez l'univers scientifico-poético-burlesque de la Compagnie Les Tiroirs Noirs.">
+    <meta property="og:image" content="assets/LogoLesTiroirsNoirs-sansTitre.png"> <!-- Image affichée lors du partage -->
+    <meta property="og:url" content="https://lestiroirsnoirs.netlify.app">
+    <meta property="og:type" content="website">
+
+    <!-- FAVICON (L'icône de l'onglet - Mettre une petite version du logo dans assets nommée favicon.png) -->
+    <link rel="icon" type="image/png" href="assets/Favicon.png">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Script JS -->
+    <script src="script.js" defer></script>
+    
+    <!-- Polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga&family=Lexend+Mega:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVIGATION PRINCIPALE -->
+    <nav>
+        <a class="logo" href="#">LES TIROIRS NOIRS</a>
+        
+        <!-- Bouton Burger (visible uniquement sur mobile) -->
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="menu">
+            <li><a href="#compagnie">Compagnie</a></li>
+            <li><a href="#membres">Membres</a></li>
+            <li><a href="#diffusion">Diffusion</a></li>
+            <li><a href="#spectacles">Spectacles</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#autres">Autres</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER / ACCUEIL -->
+    <header id="accueil" data-theme="accueil">
+        <div class="header-content">
+            
+          <!-- TITRE DYNAMIQUE (Géré par JS) -->
+            <div class="svg-title-container">
+                <svg viewBox="0 0 1000 220" preserveAspectRatio="xMidYMid meet">
+                    
+                    <!-- Les chemins (vides pour l'instant) -->
+                    <path id="pathLine1" fill="transparent" />
+                    <path id="pathLine2" fill="transparent" />
+                    <path id="pathLine3" fill="transparent" />
+
+                    <!-- Les Textes -->
+                    <text width="1000">
+                        <textPath href="#pathLine1" startOffset="50%" text-anchor="middle" class="svg-line-common">
+                            THÉÂTRE
+                        </textPath>
+                    </text>
+
+                    <text width="1000">
+                        <textPath href="#pathLine2" startOffset="50%" text-anchor="middle" class="svg-line-common">
+                            SCIENTIFICO - POÉTIQUE
+                        </textPath>
+                    </text>
+
+                    <text width="1000">
+                        <textPath href="#pathLine3" startOffset="50%" text-anchor="middle" class="svg-line-common">
+                            BURLESQUE & MUSICAL
+                        </textPath>
+                    </text>
+                </svg>
+            </div>
+
+            <!-- Logo Central -->
+            <img src="assets/LogoLesTiroirsNoirs-sansTitre.png" alt="Logo Tiroirs Noirs" class="hero-image">
+            
+            <!-- Sous-titre -->
+            <h1 class="compagnie-name">COMPAGNIE LES TIROIRS NOIRS</h1>
+        </div>
+    </header>
+
+    <!-- 1. SECTION COMPAGNIE -->
+    <section id="compagnie" data-theme="compagnie">
+        <div class="container">
+            <h2>LA COMPAGNIE</h2>
+            <!-- Image d'illustration -->
+            <img  class="img-float" src="assets/accueilLTN.jpg" alt="La troupe" class="hero-image">
+
+            <div class="content-block">
+                <p>La Compagnie a été fondée en 2001 par Hervé Le Men, Andrea Buchler et Roland Schmidt venus de l’Ecole Jacques Lecoq. Ensemble ils ont créé deux spectacles de clown.</p>
+                <p>De 2005 à 2011 Hervé Le Men s’associe avec d’autres artistes pour créer deux autres spectacles : <em>L’Erreur de Darwin</em> (théâtre burlesque et théâtre d’objet) mis en scène par Julien Mellano et soutenu par le Château de la Roche Jagu ; <em>Jack l’électron libre</em> (théâtre burlesque et scientifique) un spectacle sur la physique quantique écrit avec Pierre Dhez, physicien, coproduit et soutenu par le Synchrotron Soleil.</p>
+                <p>La compagnie interrompt son activité en 2011. Hervé Le Men la relance avec Philip Hardy en 2025 pour créer « Phéromones et contrebasse ».</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1.2 SECTION MEMBRES -->
+    <section id="membres" data-theme="membres">
+        <div class="container">
+            <h2>MEMBRES</h2>
+            <div class="members-grid">
+                
+                <!-- Hervé -->
+                <article class="member-card">
+                    <img src="assets/Hervé.png" alt="Hervé Le Men">
+                    <div class="member-info">
+                        <h3>Hervé Le Men</h3>
+                        <p>Auteur, metteur en scène, comédien, a étudié le clown, le mouvement et le texte au théâtre-Ecole Le Samovar. Il a continué à se former au clown (P. Byland, H. Haggaï), au conte (S. Delom), au mime (Y. Bianchotti), et au théâtre d’objet (J. Templeraud, J.L. Heckel).</p>
+                        <p>Cofondateur de la compagnie les Tiroirs Noirs il a écrit, mis en scène et interprété ses trois derniers spectacles et enseigné le théâtre burlesque et le clown à Brest pour la MPT du Valy-Hir et pour la compagnie Dédale de clown. Il a publié deux des trois nouvelles à l’origine de « Phéromones et contrebasse ». Il a par ailleurs participé à l’enseignement de Bruno Latour sur les controverses scientifiques et été responsable de la médiation scientifique pour les bibliothèques de l’UBO.</p>
+                    </div>
+                </article>
+
+                <!-- Philip -->
+                <article class="member-card">
+                    <img src="assets/Philip.png" alt="Philip Hardy">
+                    <div class="member-info">
+                        <h3>Philip Hardy</h3>
+                        <p>Contrebassiste et guitariste, a appris la guitare en autodidacte et la contrebasse au Conservatoire de Brest avec Jean Michel Depret (classique) et avec Frédéric Bargeon-Briet (jazz). De 2005 à 2010 il a joué pour l'orchestre symphonique universitaire de l'UBO. Il participe aux ateliers d'improvisation du conservatoire organisés par Frédéric B.Briet.</p>
+                        <p>Il joue régulièrement avec la conteuse bretonnante Awenn Plougoulm : guitare, contrebasse et utilisation de l'électro-acoustique (logiciel Usine Hollyhock). Il fabrique des instruments : cordophones, potophone, yaybahar, qu'il utilise dans ses créations et improvisations musicales. Il est l’auteur et l’interprète de la musique de "Phéromones et contrebasse".</p>
+                    </div>
+                </article>
+
+                <!-- Brieuc -->
+                <article class="member-card">
+                    <img src="assets/EléphantSurUnBanc.png" alt="Brieuc Le Guern">
+                    <div class="member-info">
+                        <h3>Brieuc le Guern</h3>
+                        <p>Brieuc a apporté son regard extérieur au spectacle « Phéromones et contrebasse ». Formé au théâtre au conservatoire de Quimper puis à l’école de L’Éponyme à Paris, il se perfectionne aux techniques clownesques avec Tom Roos, Nathalie Tarlet et Pierre Marzin.</p>
+                        <p>En 2014 il monte un duo clownesque « Libre si on veut » puis un solo « L’échéance » joués dans des cafés-théâtres parisiens et au festival d’Aurillac. En 2017, il participe au spectacle « Les mémoires d’un seigneur » du chorégraphe Olivier Dubois et découvre la danse et la performance, une expérience qu’il poursuit avec la compagnie de théâtre corporel Moveo dirigée par la chorégraphe Michaela Meschke. A Brest il collabore avec les compagnies Le Sonar, Derezo, la CAD plateforme. En 2024, il intègre la compagnie Jeanne Simone en qualité de danseur-performeur, pour le spectacle Animal Travail.</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 1.3 SECTION DIFFUSION -->
+    <section id="diffusion" data-theme="diffusion">
+        <div class="container">
+            <h2>DIFFUSION & PARTENAIRES</h2>
+            
+            <div class="text-block-transparent">
+                <h3>Phéromones et contrebasse</h3>
+                <p><strong>Une création 2025 en cours de lancement :</strong> Ekoumène (habitat participatif, Brest), Cantine numérique, Brest. l’atelier de Roc’Hanou, Plougastel. Espace Léo Ferré (Brest) Patronage laïc du pilier rouge (Brest).</p>
+                
+                <h3>L’Erreur de Darwin</h3>
+                <p><strong>(plus de 60 représentations) :</strong> Château de la Roche Jagu, Chalon dans la rue, Théâtre Confluences (Paris), Le Lavoir Moderne (Paris), bibliothèques de la Ville de Paris, festival Besoin de théâtre (Morlaix), Nous n’irons pas à Avignon (Vitry), Palais de la Découverte, Université de Bourgogne, Université de Bretagne Occidentale, bibliothèque municipale de Brest, Le Mai des Arts (le Fourneau), Centres de culture scientifique, hôpitaux psychiatriques, lycées, etc.</p>
+                <p><em>Ce spectacle, en sommeil depuis 2010, va reprendre.</em></p>
+
+                <h3>Jack l’électron libre</h3>
+                <p>(Ancien spectacle) Un spectacle burlesque sur la physique quantique écrit avec Pierre Dhez, physicien, coproduit et soutenu par le Synchrotron Soleil, le département de l’Essonne, la Ville de Paris, la région Ile de France et Le Palais de la découverte.</p>
+                
+                <a href="assets/revue de presse tiroirs Noirs.pdf" target="_blank" class="btn-link">Revue de presse (PDF)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. SECTION SPECTACLES -->
+    <section id="spectacles" data-theme="spectacles">
+        <div class="container">
+            <h2>PHÉROMONES ET CONTREBASSE</h2>
+            
+            <div class="video-grid">
+                <!-- Iframes YouTube -->
+                <iframe src="https://www.youtube.com/embed/TJ8gE9H79X0" title="Teaser 1" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/Q7hhJjp8TPw" title="Teaser 2" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/nypL6nEnY0A" title="Teaser 3" allowfullscreen></iframe>
+            </div>
+
+            <div class="synopsis-box">
+                <p>Une luciole s’en va au bal. Des cannibales la rejoignent. Un éphémère consulte son programme génétique et s’insurge contre son destin. Deux éléphants adolescents aux prises avec leurs phéromones tombent amoureux. Leurs réponses biochimiques sont scrutées par deux scientifiques. Le conférencier, témoin, conteur et acteur s’investit dans ses propos au-delà du raisonnable. Son contrebassiste en rajoute.</p>
+                <p><strong>Un théâtre poétique, scientifique et burlesque.</strong></p>
+                <br>
+                <a href="assets/PhéromonesGenèseEtUsage.pdf" target="_blank" class="btn-link">Phéromones génèse et usage (PDF)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2.2 ARCHIVES (Darwin) -->
+    <section id="archives" data-theme="archives">
+        <div class="container">
+            <h2>L'ERREUR DE DARWIN</h2>
+            
+            <div class="archive-content">
+                <img src="assets/ErreurDarwin.png" alt="L'Erreur de Darwin" class="img-float">
+                <p><strong>Teaser :</strong> « Une conférence fantaisiste entre Chaplin et Star Wars avec 3 bouts de ficelle, ou presque ».</p>
+                <p>Sur l’île de Madère, un scarabée aux grandes ailes truque la sélection naturelle parce qu’une femme-scarabée hésite à faire des bébés avec lui. Il monte une station météo et ouvre une école de pilotage dans le vent. Un scarabée sans ailes du tout fonde le PPDCV (Parti Populaire Démocratique Contre le Vol). Un entomologiste, lecteur avisé de Darwin et passionné d’aéronautique, témoigne.</p>
+                <br>
+                <a href="assets/1-Erreur_de_Darwin_descrip.pdf" target="_blank" class="btn-link">Lien vers descriptif (PDF)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2.3 AGENDA / CONTACT -->
+    <section id="agenda" data-theme="agenda">
+        <div class="container">
+            <h2>AGENDA & CONTACT</h2>
+            
+            <div class="contact-header">
+                <p><strong>Compagnie Les Tiroirs Noirs</strong></p>
+                <p>18, Rue Bel Air, 29200 Brest</p>
+                <p><a href="mailto:lestiroirsnoirs@yahoo.fr" class="highlight-link">lestiroirsnoirs@yahoo.fr</a></p>
+            </div>
+
+            <ul class="dates-list">
+                 <li>
+                    <span class="date">17 avril 2026, 10h</span>
+                    <span class="titre">Phéromones et contrebasse + débat</span>
+                    <span class="lieu">Kafkerin 77 Rue A. Kervern, Brest (à partir de 11 ans)</span>
+                </li>
+                <li>
+                    <span class="date">3 mars 2026, 10h</span>
+                    <span class="titre">Phéromones et contrebasse</span>
+                    <span class="lieu">Patronage laïc du pilier rouge, Brest (Scolaire et tout public)</span>
+                </li>
+                <li>
+                    <span class="date">19 février 2026, 19h30</span>
+                    <span class="titre">Phéromones et contrebasse</span>
+                    <span class="lieu">Espace Léo Ferré, maison de quartier de Bellevue, Brest</span>
+                </li>
+                <li>
+                    <span class="date">10 octobre 2025, 19h</span>
+                    <span class="titre">Phéromones et contrebasse</span>
+                    <span class="lieu">L’Atelier de Roc’Hanou, Plougastel</span>
+                </li>
+                <li>
+                    <span class="date">13 juin 2025, 18h30</span>
+                    <span class="titre">Phéromones et contrebasse</span>
+                    <span class="lieu">Cantine numérique, Brest</span>
+                </li>
+                <li>
+                    <span class="date">26 avril 2025, 17h</span>
+                    <span class="titre">Ekoumène</span>
+                    <span class="lieu">(habitat participatif), Brest</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 3. AUTRES -->
+    <section id="autres" data-theme="autres">
+        <div class="container">
+            <h2>AUTRES ACTIVITÉS</h2>
+
+            <div class="other-grid">
+                <!-- 3.1 Radio -->
+                <div class="other-item">
+                    <h3>Radio</h3>
+                    <p>Émissions de radio sur <strong>RADIO U BREST</strong> :</p>
+                    <ul class="simple-list">
+                        <li>Carte blanche 1 (lucioles) : 16 déc. 2025 à 9h00</li>
+                        <li>Carte blanche 2 (éphémères) : 30 déc. 2025 à 9h00</li>
+                        <li>Carte blanche 3 (éléphants) : 13 jan. 2026 à 9h00</li>
+                    </ul>
+                    <p class="mt-2"><strong>Hervé le Men</strong> - création radiophonique :<a href="https://www.radio-u.org/-Un-Bon-Boulot-temoignages-discussions-et-reportages-sur-les-grandeurs-et-les-.html" target="_blank" class="btn-link"> « Un bon boulot » </a> </p>
+                    <p class="mt-2"><strong>Philip Hardy</strong> - création radiophonique :<a href="https://www.radio-u.org/-Cadence-libre-.html" target="_blank" class="btn-link"> « Cadence Libre » </a></p>
+                </div>
+
+                <!-- 3.2 Musiques/Ecritures -->
+                <div class="other-item">
+                    <h3> Musiques / Écritures</h3>
+                    <p><strong>Compositions / Philip Hardy :</strong> fichiers plus descriptifs (à venir).</p>
+                    <p><strong>Ecritures / Hervé Le Men :</strong> extraits (à venir).</p>
+                </div>
+
+                <!-- 3.3 & 3.4 -->
+                <div class="other-item">
+                    <h3>Médiation scientifique</h3>
+                    <p>Médiation scientifique par le théâtre.</p>
+                    
+                    <h3 class="mt-4">Éducation</h3>
+                    <p>Programme « Éducation à la vie affective ».</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Les Tiroirs Noirs.</p>
+    </footer>
+
+</body>
+</html>
