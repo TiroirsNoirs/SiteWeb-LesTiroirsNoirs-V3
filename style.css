@@ -10,14 +10,14 @@
     --color-grey: #666666;       /* Gris */
 
     /* --- COULEURS DE FOND (THÈMES DYNAMIQUES) --- */
-    --bg-accueil:    #b52c2c;    /* Noir pur */
-    --bg-compagnie:  #4034af;    /* Gris très sombre */
-    --bg-membres:    #4d4a0e;    /* Nuance bleutée */
-    --bg-diffusion:  #1a5b5e;    /* Nuance marron */
+    --bg-accueil:    #b52c2c;    /* rouge vif */
+    --bg-compagnie:  #4034af;    /* bleu */
+    --bg-membres:    #4d4a0e;    /* vert olive */
+    --bg-diffusion:  #1a5b5e;    /* bleu vert */
     --bg-spectacles: #3c1a3f;    /* Nuance rouge */
     --bg-archives:   #15302b;    /* Gris soutenu */
     --bg-agenda:     #18242f;    /* Presque noir */
-    --bg-autres:     #4d1212;    /* Gris neutre */
+    --bg-autres:     #4d1212;    /* rouge bordeaux */
 
     /* --- TYPOGRAPHIE --- */
     --font-title: 'Caveat', Arial, sans-serif;
@@ -161,6 +161,8 @@ header {
     width: 80%;
     margin: 1rem auto;
     border-radius: 4px;
+    box-shadow: 0px 0px 30px 30px rgba(0,0,0,0.51);
+
 }
 
 .compagnie-name {
@@ -356,4 +358,34 @@ body.theme-autres     { background-color: var(--bg-autres); }
 .resize-animation-stopper * {
     animation: none !important;
     transition: none !important;
+}
+/* --- EFFET ÉTOILES MAGIQUES --- */
+
+/* On s'assure que le logo est au premier plan */
+.hero-image {
+    position: relative;
+    z-index: 20; 
+}
+
+/* L'étoile elle-même */
+.magic-star {
+    position: absolute;
+    color: #0011ff; /* Couleur Or #FFD700;*/
+    pointer-events: none; /* La souris passe à travers */
+    z-index: 10; /* Derrière le logo (car 10 < 20) */
+    font-weight: bold;
+    /* L'animation qui lance l'étoile */
+    animation: burst 1.5s ease-out forwards;
+}
+
+@keyframes burst {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    }
+    100% {
+        opacity: 0;
+        /* --tx et --ty seront calculés par le JS pour chaque étoile */
+       transform: translate(calc(-50% + var(--tx)), calc(-50% + var(--ty))) scale(1.5) rotate(180deg);
+    }
 }
